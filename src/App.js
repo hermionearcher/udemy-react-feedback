@@ -6,6 +6,7 @@ import FeedbackForm from './components/FeedbackForm'
 import AboutIconLink from './components/AboutIconLink'
 import AboutPage from './pages/AboutPage'
 import { FeedbackProvider } from './context/FeedbackContext'
+import Post from './components/Post'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             ></Route>
 
             <Route path='/about' element={<AboutPage />} />
+            <Route path='/post' element={<Post />} />
           </Routes>
 
           <AboutIconLink />
